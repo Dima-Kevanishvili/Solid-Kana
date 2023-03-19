@@ -19,8 +19,8 @@ import {
 import { Kana, KanaTypes } from "../../types";
 import QuizTypeChooser from "../QuizTypeChooser";
 import styles from "./BentoQuiz.module.scss";
-import { DraggablesTable } from "./DndComponents/DraggablesTable";
-import { DroppablesTable } from "./DndComponents/DroppablesTable";
+import { DraggablesTable } from "./DnDComponents/DraggablesTable";
+import { DroppablesTable } from "./DnDComponents/DroppablesTable";
 
 const BentoQuiz: Component = () => {
   const bentoKanas = getKanasForBento();

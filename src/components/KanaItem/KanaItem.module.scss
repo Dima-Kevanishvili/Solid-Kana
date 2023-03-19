@@ -1,0 +1,20 @@
+@import "../../styling/variables";
+@import "../../styling/flex.scss";
+.wrapper {
+  @include flex-center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: $elevation-03;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 30%);
+  -webkit-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 30%);
+  -moz-box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 30%);
+}
+
+.symbolText {
+  font-size: 20px;
+}
+.romajiText {
+  font-size: 16px;
+}

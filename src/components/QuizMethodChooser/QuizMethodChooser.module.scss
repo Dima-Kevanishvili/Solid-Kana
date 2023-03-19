@@ -1,0 +1,7 @@
+@import "../../styling/variables.scss";
+@import "../../styling/buttons.scss";
+.button {
+  @include default-button;
+  margin-top: 50px;
+  width: 45%;
+}

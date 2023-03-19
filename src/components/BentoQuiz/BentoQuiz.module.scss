@@ -1,0 +1,63 @@
+@import "../../styling/variables.scss";
+@import "../../styling/buttons.scss";
+@import "../../styling/flex.scss";
+
+@mixin cellSize {
+  width: 45px;
+  height: 45px;
+}
+
+.dndWrapper {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.romajiWrapper {
+  @include flex-center;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.romajiRow {
+  @include flex-center;
+  width: 100%;
+}
+
+.romajiCell {
+  @include flex-center;
+  @include cellSize;
+  background-color: $elevation-01;
+  border: 1px solid $elevation-12;
+  cursor: default;
+}
+.answeredCell {
+  background-color: $surface-color;
+  color: $medium-emphasis-text;
+}
+
+.draggablesWrapper {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.draggableBoxWrapper {
+  @include flex-center;
+  @include cellSize;
+}
+
+.draggableBox {
+  @include flex-center;
+  border: 1px solid $elevation-12;
+  width: 30px;
+  height: 30px;
+  touch-action: none;
+  cursor: pointer;
+}
+
+.resetButton {
+  @include default-button;
+  margin-top: 20px;
+}

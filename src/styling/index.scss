@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import "./variables";
+@import "./typography";
+@import "./wrappers";
+@import "./spacing";
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: $surface-color;
+}
+
+#root {
+  height: 100vh;
+  background-color: $surface-color;
+  color: $high-emphasis-text;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+*:focus {
+  outline: none;
+}

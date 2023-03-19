@@ -1,0 +1,16 @@
+@import "../../styling/variables.scss";
+@import "../../styling/buttons.scss";
+@import "../../styling/flex.scss";
+
+.startButton {
+  @include default-button;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.endWrapper {
+  @include flex-center;
+  flex-direction: column;
+  height: 100%;
+  padding: 25px;
+}

@@ -1,0 +1,17 @@
+@mixin default-button {
+  background-color: $elevation-03;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: $high-emphasis-text;
+  font-size: 18px;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  &:hover {
+    background-color: $elevation-04;
+  }
+}

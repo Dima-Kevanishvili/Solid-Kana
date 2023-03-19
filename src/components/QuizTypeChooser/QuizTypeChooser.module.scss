@@ -1,0 +1,19 @@
+@import "../../styling/variables.scss";
+@import "../../styling/buttons.scss";
+@import "../../styling/flex.scss";
+
+.button {
+  @include default-button;
+  margin-top: 50px;
+  width: 45%;
+}
+
+.quizTypeChooser {
+  @include flex-center;
+  margin-top: 20px;
+  flex-direction: column;
+  label {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+}

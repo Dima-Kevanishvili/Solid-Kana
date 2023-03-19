@@ -1,0 +1,34 @@
+@import "../../styling/variables.scss";
+@import "../../styling/buttons.scss";
+
+.symbol {
+  font-size: 110px;
+}
+
+.answerButton {
+  @include default-button;
+  width: calc(100% / 4);
+  font-size: 24px;
+  margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.correctAnswer {
+  background-color: #007b00;
+  &:hover {
+    background-color: #007b00;
+  }
+}
+
+.incorrectAnswer {
+  background-color: #9c0000;
+  &:hover {
+    background-color: #9c0000;
+  }
+}
+
+.nextButton {
+  @include default-button;
+}

@@ -1,0 +1,33 @@
+@import "./flex.scss";
+
+.appWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.defaultInnerWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexColumnCenterWrapper {
+  @include flex-center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  padding: $default-hor-padding;
+}
+
+.quizWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 25px;
+  margin-bottom: 25px;
+  height: 100%;
+}
